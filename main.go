@@ -10,6 +10,6 @@ func indexHandler(res http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", indexHandler)
+	http.HandleFunc("/index", indexHandler)
 	http.ListenAndServe(":8080", nil)
 }
